@@ -33,18 +33,23 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.Buscar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.txtTurno = new System.Windows.Forms.TextBox();
+            this.txtDoc = new System.Windows.Forms.TextBox();
+            this.txtPac = new System.Windows.Forms.TextBox();
+            this.lblSalida = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dtpTurno = new System.Windows.Forms.DateTimePicker();
+            this.timePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 40);
+            this.label1.Location = new System.Drawing.Point(37, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 18);
             this.label1.TabIndex = 0;
@@ -53,7 +58,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(146, 40);
+            this.label2.Location = new System.Drawing.Point(133, 22);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 18);
             this.label2.TabIndex = 1;
@@ -62,7 +67,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(241, 40);
+            this.label3.Location = new System.Drawing.Point(259, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 18);
             this.label3.TabIndex = 2;
@@ -71,7 +76,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(318, 40);
+            this.label4.Location = new System.Drawing.Point(366, 22);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 18);
             this.label4.TabIndex = 3;
@@ -80,33 +85,37 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(401, 40);
+            this.label5.Location = new System.Drawing.Point(470, 22);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(38, 18);
             this.label5.TabIndex = 4;
             this.label5.Text = "Hora";
             // 
-            // button1
+            // btnAgregar
             // 
-            this.button1.Location = new System.Drawing.Point(467, 78);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 28);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAgregar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAgregar.Location = new System.Drawing.Point(504, 78);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(75, 28);
+            this.btnAgregar.TabIndex = 5;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // button2
+            // Buscar
             // 
-            this.button2.Location = new System.Drawing.Point(467, 176);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Buscar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.Buscar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Buscar.Location = new System.Drawing.Point(504, 175);
+            this.Buscar.Name = "Buscar";
+            this.Buscar.Size = new System.Drawing.Size(75, 23);
+            this.Buscar.TabIndex = 6;
+            this.Buscar.Text = "Buscar";
+            this.Buscar.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(467, 214);
+            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button3.Location = new System.Drawing.Point(504, 214);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 7;
@@ -115,40 +124,96 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(467, 133);
+            this.textBox1.Location = new System.Drawing.Point(504, 133);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(75, 24);
             this.textBox1.TabIndex = 8;
             // 
-            // dataGridView1
+            // txtTurno
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 78);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(402, 159);
-            this.dataGridView1.TabIndex = 9;
+            this.txtTurno.Location = new System.Drawing.Point(37, 48);
+            this.txtTurno.Name = "txtTurno";
+            this.txtTurno.Size = new System.Drawing.Size(61, 24);
+            this.txtTurno.TabIndex = 10;
+            this.txtTurno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtDoc
+            // 
+            this.txtDoc.Location = new System.Drawing.Point(230, 48);
+            this.txtDoc.Name = "txtDoc";
+            this.txtDoc.Size = new System.Drawing.Size(100, 24);
+            this.txtDoc.TabIndex = 12;
+            this.txtDoc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtPac
+            // 
+            this.txtPac.Location = new System.Drawing.Point(103, 48);
+            this.txtPac.Name = "txtPac";
+            this.txtPac.Size = new System.Drawing.Size(121, 24);
+            this.txtPac.TabIndex = 13;
+            this.txtPac.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblSalida
+            // 
+            this.lblSalida.AutoSize = true;
+            this.lblSalida.Location = new System.Drawing.Point(37, 92);
+            this.lblSalida.Name = "lblSalida";
+            this.lblSalida.Size = new System.Drawing.Size(44, 18);
+            this.lblSalida.TabIndex = 15;
+            this.lblSalida.Text = "Turnos";
+            // 
+            // label6
+            // 
+            this.label6.Location = new System.Drawing.Point(514, 112);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 18);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "N° Turno";
+            // 
+            // dtpTurno
+            // 
+            this.dtpTurno.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpTurno.Location = new System.Drawing.Point(342, 48);
+            this.dtpTurno.Name = "dtpTurno";
+            this.dtpTurno.Size = new System.Drawing.Size(112, 24);
+            this.dtpTurno.TabIndex = 17;
+            // 
+            // timePicker
+            // 
+            this.timePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.timePicker.Location = new System.Drawing.Point(467, 48);
+            this.timePicker.Name = "timePicker";
+            this.timePicker.ShowUpDown = true;
+            this.timePicker.Size = new System.Drawing.Size(112, 24);
+            this.timePicker.TabIndex = 18;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
-            this.ClientSize = new System.Drawing.Size(591, 260);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(591, 422);
+            this.Controls.Add(this.timePicker);
+            this.Controls.Add(this.dtpTurno);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblSalida);
+            this.Controls.Add(this.txtPac);
+            this.Controls.Add(this.txtDoc);
+            this.Controls.Add(this.txtTurno);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Buscar);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Futura Std Light", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Turnero";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,11 +226,17 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button Buscar;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TextBox txtTurno;
+        private System.Windows.Forms.TextBox txtDoc;
+        private System.Windows.Forms.TextBox txtPac;
+        private System.Windows.Forms.Label lblSalida;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker dtpTurno;
+        private System.Windows.Forms.DateTimePicker timePicker;
     }
 }
 

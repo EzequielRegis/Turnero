@@ -79,5 +79,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Turnero.Back\Turnero.Back.csproj">
+      <Project>{5FA432C7-8749-418F-9476-F565670DFE7F}</Project>
+      <Name>Turnero.Back</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

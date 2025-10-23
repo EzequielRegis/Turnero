@@ -43,10 +43,8 @@
   <ItemGroup>
     <Compile Include="Turno.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
-=======
+
     <Compile Include="Turnos.cs" />
->>>>>>> 1645dc0dfd8ebab9efb0d64dd12f3770d2602bd5
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

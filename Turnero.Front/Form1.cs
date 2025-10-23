@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using System.Xml.Serialization;
 using System.IO;
 
+
 namespace Turnero.Front
 {
     public partial class Form1 : Form
@@ -38,7 +39,7 @@ namespace Turnero.Front
         }
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            
+
 
             int numeroBuscado;
 
@@ -79,7 +80,7 @@ namespace Turnero.Front
                 else
                 {
                     MessageBox.Show("Turno no encontrado.");
-                    
+
                 }
             }
             else

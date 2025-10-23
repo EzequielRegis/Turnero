@@ -34,6 +34,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.btnBuscar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.txtNumeroTurno = new System.Windows.Forms.TextBox();
@@ -44,6 +45,18 @@
             this.dtpTurno = new System.Windows.Forms.DateTimePicker();
             this.timePicker = new System.Windows.Forms.DateTimePicker();
             this.lstTurnos = new System.Windows.Forms.ListBox();
+=======
+            this.Buscar = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTurno = new System.Windows.Forms.TextBox();
+            this.txtDoc = new System.Windows.Forms.TextBox();
+            this.txtPac = new System.Windows.Forms.TextBox();
+            this.lblSalida = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.dtpTurno = new System.Windows.Forms.DateTimePicker();
+            this.timePicker = new System.Windows.Forms.DateTimePicker();
+>>>>>>> 1645dc0dfd8ebab9efb0d64dd12f3770d2602bd5
             this.SuspendLayout();
             // 
             // label1
@@ -102,6 +115,7 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
+<<<<<<< HEAD
             // btnBuscar
             // 
             this.btnBuscar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -112,6 +126,17 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+=======
+            // Buscar
+            // 
+            this.Buscar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Buscar.Location = new System.Drawing.Point(504, 175);
+            this.Buscar.Name = "Buscar";
+            this.Buscar.Size = new System.Drawing.Size(75, 23);
+            this.Buscar.TabIndex = 6;
+            this.Buscar.Text = "Buscar";
+            this.Buscar.UseVisualStyleBackColor = true;
+>>>>>>> 1645dc0dfd8ebab9efb0d64dd12f3770d2602bd5
             // 
             // button3
             // 
@@ -122,6 +147,7 @@
             this.button3.TabIndex = 7;
             this.button3.Text = "Eliminar";
             this.button3.UseVisualStyleBackColor = true;
+<<<<<<< HEAD
             this.button3.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // txtNumeroTurno
@@ -131,6 +157,15 @@
             this.txtNumeroTurno.Size = new System.Drawing.Size(75, 24);
             this.txtNumeroTurno.TabIndex = 8;
             this.txtNumeroTurno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+=======
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(504, 133);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(75, 24);
+            this.textBox1.TabIndex = 8;
+>>>>>>> 1645dc0dfd8ebab9efb0d64dd12f3770d2602bd5
             // 
             // txtTurno
             // 
@@ -156,6 +191,18 @@
             this.txtPac.TabIndex = 13;
             this.txtPac.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+<<<<<<< HEAD
+=======
+            // lblSalida
+            // 
+            this.lblSalida.AutoSize = true;
+            this.lblSalida.Location = new System.Drawing.Point(37, 92);
+            this.lblSalida.Name = "lblSalida";
+            this.lblSalida.Size = new System.Drawing.Size(44, 18);
+            this.lblSalida.TabIndex = 15;
+            this.lblSalida.Text = "Turnos";
+            // 
+>>>>>>> 1645dc0dfd8ebab9efb0d64dd12f3770d2602bd5
             // label6
             // 
             this.label6.Location = new System.Drawing.Point(514, 112);
@@ -181,6 +228,7 @@
             this.timePicker.Size = new System.Drawing.Size(112, 24);
             this.timePicker.TabIndex = 18;
             // 
+<<<<<<< HEAD
             // lstTurnos
             // 
             this.lstTurnos.FormattingEnabled = true;
@@ -190,12 +238,15 @@
             this.lstTurnos.Size = new System.Drawing.Size(436, 225);
             this.lstTurnos.TabIndex = 19;
             // 
+=======
+>>>>>>> 1645dc0dfd8ebab9efb0d64dd12f3770d2602bd5
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Firebrick;
             this.ClientSize = new System.Drawing.Size(591, 422);
+<<<<<<< HEAD
             this.Controls.Add(this.lstTurnos);
             this.Controls.Add(this.timePicker);
             this.Controls.Add(this.dtpTurno);
@@ -206,6 +257,18 @@
             this.Controls.Add(this.txtNumeroTurno);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnBuscar);
+=======
+            this.Controls.Add(this.timePicker);
+            this.Controls.Add(this.dtpTurno);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.lblSalida);
+            this.Controls.Add(this.txtPac);
+            this.Controls.Add(this.txtDoc);
+            this.Controls.Add(this.txtTurno);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.Buscar);
+>>>>>>> 1645dc0dfd8ebab9efb0d64dd12f3770d2602bd5
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -230,6 +293,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnAgregar;
+<<<<<<< HEAD
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox txtNumeroTurno;
@@ -240,6 +304,18 @@
         private System.Windows.Forms.DateTimePicker dtpTurno;
         private System.Windows.Forms.DateTimePicker timePicker;
         private System.Windows.Forms.ListBox lstTurnos;
+=======
+        private System.Windows.Forms.Button Buscar;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTurno;
+        private System.Windows.Forms.TextBox txtDoc;
+        private System.Windows.Forms.TextBox txtPac;
+        private System.Windows.Forms.Label lblSalida;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DateTimePicker dtpTurno;
+        private System.Windows.Forms.DateTimePicker timePicker;
+>>>>>>> 1645dc0dfd8ebab9efb0d64dd12f3770d2602bd5
     }
 }
 
